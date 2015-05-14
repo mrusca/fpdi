@@ -25,7 +25,7 @@
 //  https://github.com/hanneskod/fpdi/issues
 //
 namespace fpdi {
-    if (!class_exists('\\TCPDF', false)) {
+    if (false && !class_exists('\\TCPDF', false)) {
         class fpdi_bridge extends \fpdf\FPDF
         {
         }
@@ -96,7 +96,8 @@ namespace fpdi {
                             case 'n':
                                 $out .= chr(10);
                                 break;
-                            case '':
+                            case '
+':
                                 if ($count != $n - 1 && $s[$count + 1] == '
 ') {
                                     $count++;
